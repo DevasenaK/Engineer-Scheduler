@@ -25,4 +25,8 @@ An engineer cannot have two afternoon shifts on consecutive days.
 Each engineer should have completed one whole day of support in any 2 week period. 
 Any Engineer who has completed 1 whole day of support is exempted from the schedule.
 
+Testing: To exempt an engineer in the first week shift:
+Edit File \Models\Repository\EngineerRepository.cs
+Method Name:GetAllEngineers
+Example:engineers[8].IsAvailable = false;
 
